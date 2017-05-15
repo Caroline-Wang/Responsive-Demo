@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+}
+/*.clearfix::after{*/
+    /*content: '';*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
+
+header{
+    text-align: center;
+    padding-top: 54px;
+    padding-bottom: 35px;
+}
+header>.profile{
+
+}
+header>.profile>img{
+    width:73px;
+    height:73px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+header>.tags{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding:0;
+    margin:41px 0 0 0;
+}
+header>.tags>li{
+    flex-shrink: 0;
+    flex-grow: 0;
+    width:128px;
+    height: 24px;
+    line-height: 24px;
+    margin:16px 16px 0 16px;
+    border-radius: 3px;
+    background: #d8d8d8;
+}
+
+.banner{
+    background:#efefef;
+    padding: 75px 20px;
+    text-align: center;
+}
+.banner>h2{
+    background:#d8d8d8;
+    border-radius:14px;
+    max-width:376px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 35px;
+}
+@media (max-width: 500px) {
+    .banner>h2{
+        background: transparent;
+    }
+    .banner>h2>span{
+        display: block;
+        background:#d8d8d8;
+        border-radius:14px;
+    }
+    .banner>h2>span:nth-of-type(1){
+        margin-bottom: 19px;
+    }
+}
+.banner>p{
+    background:#e8e8e8;
+    border-radius:14px;
+    max-width:536px;
+    line-height: 24px;
+    margin:19px auto;
+}
+
+.music-menu{
+    /*padding: 41px 20px;*/
+    max-width:980px;
+    margin:41px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.music-menu>.list-item{
+    width:288px;
+    text-align: center;
+    margin:16px;
+}
+.music-menu>.list-item>img{
+    background:#d8d8d8;
+    border-radius:4px;
+    width:288px;
+    height:181px;
+}
+.music-menu>.list-item>h3{
+    margin: 0px;
+    margin-top: 10px;
+}
+.music-menu>.list-item>p{
+    margin: 0px;
+    margin-top: 4px;
+
+}
