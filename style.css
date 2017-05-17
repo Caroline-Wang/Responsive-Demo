@@ -7,11 +7,6 @@ body{
     box-sizing: border-box;
     /*border: 1px solid;*/
 }
-/*.clearfix::after{*/
-    /*content: '';*/
-    /*display: block;*/
-    /*clear: both;*/
-/*}*/
 
 header{
     text-align: center;
@@ -86,12 +81,22 @@ header>.tags>li{
 
 .music-menu{
     /*padding: 41px 20px;*/
-    max-width:980px;
+    max-width:960px;
     margin:41px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+}
+@media(max-width:960px){
+  .music-menu{
+      max-width:640px;
+  }
+}
+@media(max-width:640px){
+  .music-menu{
+      max-width:320px;
+  }
 }
 .music-menu>.list-item{
     width:288px;
