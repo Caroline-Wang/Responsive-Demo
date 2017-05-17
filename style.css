@@ -48,7 +48,7 @@ header>.tags>li{
     padding: 75px 20px;
     text-align: center;
 }
-.banner>h2{
+.banner h2{
     background:#d8d8d8;
     border-radius:14px;
     max-width:376px;
@@ -58,17 +58,18 @@ header>.tags>li{
     margin-right:auto;
     margin-bottom: 35px;
 }
+.banner>.style2{
+    display:none;
+}
 @media (max-width: 500px) {
-    .banner>h2{
-        background: transparent;
+    .banner>.style1{
+        display:none;
     }
-    .banner>h2>span{
-        display: block;
-        background:#d8d8d8;
-        border-radius:14px;
+    .banner>.style2{
+        display:block;
     }
-    .banner>h2>span:nth-of-type(1){
-        margin-bottom: 19px;
+    .banner>.style2>h2:first-child{
+        margin-bottom:20px;
     }
 }
 .banner>p{
